@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TPolymer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="style.css" rel="stylesheet"  type="text/css" />
+    <link href="media_style.css" rel="stylesheet" type="text/css" />
+    <link href="mtp_js.js" rel="stylesheet" >
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://use.fontawesome.com/2efc49c887.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!--      Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
+                        Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/
+            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+            <script src="Map/polyline_animation.js" type="text/javascript"></script>
+            <script src="Map/animated_line.js" type="text/javascript"></script>-->
+</head>
+    
+    <body>
+        <div class="wrapper">
+            <button onclick="topFunction()" id="myBtn" title="В начало"><i class="fa fa-angle-double-up"
+                    aria-hidden="true"></i></button>
+            <div class="header">
+                <div class="container">
+            
+                    <div class="header__row">
+                        <div class="header__logo">
+                            <img src="imeges/logo_tp_w.png" width="100%" alt="logo">
+                        </div>
+                    <!--    <div class="heade__slogan"><H1>Компаундирование Полимеров</H1></div>-->
+                        <nav class="menu">
+                            <div class="menu__row" id="bar">
+                                
+                                    <div class="menu__main-burg">
+                                        <div class="menu__name">МЕНЮ</div>
+                                        <div class="menu__burg">
+                                            <div class="menu__burg-line ">
+                                                <span class="menu__burg-line one"></span>
+                                                <span class="menu__burg-line two"></span>
+                                                <span class="menu__burg-line three"></span>
+                                                <span class="menu__burg-line four"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="menu__main">
+                                    <li class="menu__main-home"><a href="#content__competition">Компетенции</a></li>
+                                    <li class="menu__main-prodact"><a href="#product">Продукция</a></li>
+                                    <li class="menu__main-service"><a href="#service">Услуги</a></li>
+                                    <li class="menu__main-contact"><a href="#contact">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="screensaver">
+                <div class="container">
+                    <div class="screensaver-slogan"><h2>Наши Компетенции</h2><p>Компаундирование Полимеров</p>
+                        <span><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="container">
+                    <div class="cont__tp" id="product">
+                        <div class="cont__tp-item1">
+                            <ul>
+                                <li>TPE</li>
+                                <li>Термоэластопласты</li>
+                                <li>TPE-S TPE-O TPE-V</li>
+                                <li><a class=cont__tp-item1-modal-open href="#">Подробнее<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                            </ul>
+                            
+                                
+                            <div class="cont__tp-item1-info ">
+                                <div class="cont__tp-item1-info-modal">
+                                    <a class="cont__tp-item1-info-modal-close" href="#">Закрыть</a>Термоэластопласты
+                                    <p>Мы производим широкий спектр термоэластопластов на основе SEBS, EPDM, TPU с различными
+                                    свойствами, для любых сфер применения и любых способов переработки. В стандартном исполнении произвоим термоэластопласты
+                                    натурального и черного цветов. В специальном исполнении доступны прозрачные и цветные марки, с твердостью от 5 ShorA до 55 ShorD. А также наши
+                                    технологии позволяют нам производить марки с такими свойствами как адгезионные, антистатические, огнестойкие, вспененные и т.д.
+                                    <br>Для более подробной информацией просим связаться с нами. Мы всегда рады помочь Вам в подборе материала.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont__tp-item2">
+                            <h2>НАШИ КОМПЕТЕНЦИИ</h2> <br>
+                            <p> Компания Тольятти Полимер специализируется на разработке и производстве термопластичных компаундов
+                                на основе
+                                различных полимеров. Наши технологии компаундирования, а также всесторонние знания в решении
+                                прикладных задач,
+                                позволяют производить инженерные пластики широкого спектра применения. Мы предлагаем как
+                                стандартизированные, так и специальные решения для наших клиентов.</p>
+                        </div>
+                        <div class="cont__tp-item3"><p>КРАСИТЕЛЬ</p><h2>БЕЛЫЙ</h2><p>Любые оттенки</p>
+                            <ul class=cont__tp-item3-list1>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <a class="cont__tp-item3-modal-open" href="#">ПОДРОБНЕЕ</a> 
+                            <div class="cont__tp-item3-info">
+                                <div class="cont__tp-item3-info-modal">
+                                    <a class="cont__tp-item3-info-modal-close" href="#">Закрыть</a>
+                                    <ul lclass=cont__tp-item3-list1>
+                                        <li>Белый краситель - концентраты TiO2</li>
+                                        <li>Производим только под заказ</li>
+                                        <li>Наполнение диоксидом титана до 50%</li>
+                                        <li>Любая полимерная основа</li>
+                                        <li>Любые оттенки</li>
+                                        <li></li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont__tp-item4">
+                            <ul>
+                                <li>КРАСИТЕЛЬ</li>
+                                <li>ЧЁРНЫЙ</li>
+                                <li>Концентрат тех.углерода</li>
+                                <li><a class="cont__tp-item4-modal-open" href="#">Посмотреть <i class="fa fa-forward" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <div class="cont__tp-item4-info">
+                                <div class="cont__tp-item4-info-modal">
+                                    <a class="cont__tp-item4-info-modal-close" href="#">Закрыть</a>ЧЕРНЫЙ КРАСИТЕЛЬ
+                                    <p>В стандартном исполнении всегда в наличии на складе краситель на основе полипропилена РР с концентрацией 
+                                        30% и 40% технического углерода.</p>
+                                    <p>В специальном исполнении, под заказ мы предлагаем изготовить концентраты тех углерода на основе 
+                                        таких полимеров как РА-6, PE, HPE, LLDPE, EVA, TPU.</p>
+                                    <p> Мы производим черные красители с различной вязкостью расплава - для лучшего распределения
+                                        в матрице окрашиваемого полимера.</p>   
+                                    <p> Изготовим краситель конкретно под метод переработки - литье под давлением, екструзия,
+                                        выдувное формование.</p> Возможна регулировка оттенка в сторону синего или красного.  
+                                        
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont__tp-item5">
+                            <div class="cont__tp-item5-wrap">
+                                <ul class="list1">
+                                    <li>Компаунды на основе</li>
+                                    <li>ПОЛИАМИДА</li>
+                                    <li>ПОЛИПРОПИЛЕНА</li>
+                                    <li><a class="cont__tp-item5-modal-open" href="#">Ещё<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                                <ul class="list2">
+                                    <li>Стеклонаполненные</li>
+                                    <li>Эластифицированные</li>
+                                    <li>Огнестойкие</li>
+                                    <li>Минералонаполненные</li>
+                                </ul>
+                                <div class="cont__tp-item5-info">
+                                    <div class="cont__tp-item5-info-modal">
+                                        <a class="cont__tp-item5-info-modal-close" href="#">Закрыть</a>Компаунды 
+                                        <p>Мы производим различные виды компаундов на основе полиамидов и полипропиленов.</p> 
+                                        Гибкость нашего оборудования позволяет нам производить компаунды по совершенно различным технологиям компаундирования. 
+                                        При армирования полимеров стекловолокном мы применяем технологии бережного компаундирования, для обеспечения 
+                                        целостности стеклянных волокон. 
+                                        При моодификации полимеров минералами и пластификаторами, мы применяем более интенсивные технологии компаундирования 
+                                        с применением высоких сдвиговых усилий, высоких скоростей компаундирования. 
+                                        Для производства огнестойких компаундов применяются технологии с малым временем компаундирования, для предотвращения 
+                                        реагирования антипиренов.
+                                        Также мы готовы предложить компаунды  окрашенные  на нашем производстве.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont__tp-item6">
+                            <p> <b> ИНДИВИДУАЛЬНОСТЬ </b> – это одна из наших самых сильных сторон. Мы предлагаем для наших клиентов
+                                гибкие решения и
+                                индивидуальный подход, которые всегда актуальны и востребованы.
+                                Высокие стандарты качества, растущее давление на сроки выполнения заказов, высокий уровень
+                                логистических решений,
+                                разнообразие продукции и высокая конкуренция, все это формирует нашу деловую среду. Ключом к решению
+                                этих задач
+                                явилось обеспечение максимальной гибкости нашего производства, в совокупности с управлением по
+                                качеству. По этой
+                                причине мы можем предложить решения как для крупных предприятий так и для средних и
+                                микропредприятий.
+                            </p>
+                        </div>
+                        <div class="cont__tp-item7">
+                            <ul class="cont__tp-item7-list1">
+                                <li>Красители</li>
+                                <li><h2>ЦВЕТНЫЕ</h2></li>
+                                <li><span></span></li>
+                                <li>На основе PP, PA, LLDPE <br> TPU, TPE.</li>
+                                <li> <a class="cont__tp-item7-modal-open" href="#">Ещё<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <div class="cont__tp-item7-info">
+                                <div class="cont__tp-item7-info-modal">
+                                    <a class="cont__tp-item7-info-modal-close" href="#">Закрыть<i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+                                    <ul class="cont__tp-item7-list2" >
+                                        <li>ЦВЕТНЫЕ КРАСИТЕЛИ производим только под заказ</li>
+                                        <li>Подбор и согласование цвета</li>
+                                        <li>Полимерная основа PP, PA, PE, EVA, LLDPE, PVH, POE, TPU, TPE</li>
+                                        <li>На основе пигментов - органических, неорганических, жирорастворимых, флюоресцентных</li>
+                                        <li>Термостойкие - для конструкционных пластмасс</li>
+                                        <li>Стойкие к УФ </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont__tp-item8">
+                            <p>Мы делаем больше, чем просто производим простые смеси полимеров.<b> МЫ СЕРВИСНАЯ КОМПАНИЯ,</b>
+                                постоянно развивающая наши
+                                собственные продукты и решения для клиентов в области компаундирования.
+                                В производстве полимерных компаундов наша команда динамична и инновационна. Наши главные
+                                цели-предоставить клиентам
+                                высочайший сервис, а также инновационные решения. Пожалуйста, свяжитесь с нами, чтобы узнать, как мы
+                                можем быть
+                                полезны для решения Ваших задач.</p>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            
+            <div class="service" id="service">      
+                <div class="container">
+                    <div class="service-info"><h3>УСЛУГИ</h3>
+                            <ul>
+                                <li>Мы оказываем услуги в сфере компаундирования полимерных материалов</li>
+                                <li>1.  Мы готовы предоставить наши возможности и наши знания для изготовления Ваших компаундов
+                            по Вашим рецептурам. </li>
+                                <li>2. Разработка рецептур материалов под Ваши задачи.</li>
+                                <li>3. Доработка Ваших рецептур материалов с последующим изготовлением.</li>
+                                <li>4. Корректировка свойств уже готового Вашего материала.</li>
+                                <li>5. Разработка красителей.</li>
+                                <li>6. Разработка окрашенных компаундов.</li>
+                                <li>7. Изготовление прототипа конечного изделия.</li>
+                                <li>8. Мы готовы к сотрудничеству по разработке инновационных материалов, импортозамещающих материалов.</li>
+                                <li>Давайте вместе воплотим Ваши идеи в готовый продукт.</li>
+                            </ul>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="contact" id="contact">  
+                <div class="container">
+                    <div class="contact__row">
+                    <div class="contact-address"><h3>Контакты</h3></div>
+                    <div class="contact-list">
+                        <ul>
+                            <li><h3>Адрес:</h3></li>
+                            <li>445012 Самарская обл. г. Толятти</li>    
+                            <li><i class="fa fa-map-marker " aria-hidden="true"></i>ул.Коммунистическая д.96 офис 406</li>
+                            <li><i class="fa fa-phone-square " aria-hidden="true"></i><a href="tel:+79033317692">+7(8482)00-00-00</a></li>
+                            <li><i class="fa fa-envelope-o " aria-hidden="true"></i><a href="malto:roskipavto@mail.ru">tlt-polymer@yandex.ru</a></li>
+                            <li><h3>График работы:</h3></li>
+                            <li>Понедельник-Пятница</li>
+                            <li><i class="fa fa-clock-o " aria-hidden="true"></i>9:00 - 18:00</li>
+                        </ul>
+                    </div>
+                    <div id="map"></div>
+                    </div>
+                </div>     
+            </div> 
+            
+            <div class="botfooter">
+                <div class="container">
+                    <div class="botfooter__row">
+                        <div class="botfooter__row-text">
+                            <ul>
+                                <li>Тольятти 2020. ООО "Тольятти Полимер". Все права защищены.</li>
+                                <li>Разработка и дизайн сайта: <em>"_____________"</em></li>
+                            </ul>
+                        </div>
+                        <div class="logotip__row">
+                            <span class="logotip__row-sh2"></span>
+                            <span class="logotip__row-sh1"></span>
+                            <span class="logotip__row-text">Тольятти Полимер</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="mtp_js.js"></script>
+            
+    </body>
+</html>
