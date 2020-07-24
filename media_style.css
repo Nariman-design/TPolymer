@@ -71,4 +71,10 @@
 	padding: 20px;
     width: 100%;
     }
+    .botfooter__row-text{
+    text-align: center;
+    font-size: 10px;
+    margin: 0px 0;
+    padding: 0px 0;
+    }  
 }
