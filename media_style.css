@@ -21,6 +21,9 @@
                         'item4 item7'
                         'item8 item8';
     }
+    .menu__main li{
+    margin-top: 20px;
+    }
 }
 
 /* Extra Small Devices, Phones */
