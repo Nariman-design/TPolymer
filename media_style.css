@@ -50,8 +50,8 @@
     }
     .cont__tp {
     display: grid;
-    grid-template-areas: 'item1' 
-                        'item2 '
+    grid-template-areas: 'item2' 
+                        'item1 '
                         'item3'
                         'item4'
                         'item5'
@@ -69,7 +69,7 @@
 	top: 20%;
 	right:0 ;
 	padding: 20px;
-    width: 100%;
+    max-width: 100%;
     }
     .botfooter__row-text{
     text-align: center;
