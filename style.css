@@ -143,15 +143,15 @@ z-index:1 ;
     z-index: 2;
 }
 .menu__main a{
-    color: #817f7f;
+    color: #ffffff;
 }
 .menu__main li{
     
     text-align: center;
     margin-top: 40px;
-    font-weight: lighter;
+    font-weight: 400;
     letter-spacing: 2px;
-    font-size: 15px;
+    font-size: 20px;
     transition: 1s all linear;
 }
 .menu__main li a:hover{
