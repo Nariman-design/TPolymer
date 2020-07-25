@@ -261,6 +261,7 @@ z-index:1 ;
     text-align: center;
     color: #FFFFFF;
     padding-bottom: 20px;
+    
 }
 .cont__tp-item1 ul li{
     margin-top: 20px;
@@ -540,10 +541,11 @@ z-index:1 ;
     margin-top: 10px;
     padding: 10px 10px;
     background: linear-gradient(to left, #1d1d1d 0%, rgb(175, 160, 160), #2b2a2a);
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(146, 146, 146);
     color: #2c1e64;
     font-size: 18px;
-    box-shadow: 0 5px 5px 0 rgba(139, 111, 240, 0.2);
+    font-weight: 500;
+    box-shadow: 0 5px 5px 0 rgba(172, 150, 253, 0.2);
     margin-bottom: 5px;
 }
 .cont__tp-item5-info {
@@ -751,9 +753,11 @@ z-index:1 ;
     font-weight: 600;
     color: aliceblue;
     padding: 10px;
+    margin-top: 60px;
 }
 
 .contact-address{
+    margin-top: 60px;
     font-size: 30px;
     padding: 20px;
     background-color: rgb(0, 0, 0);
