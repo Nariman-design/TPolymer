@@ -247,7 +247,7 @@ z-index:1 ;
     margin-top: 0px;
 }
 .screensaver-slogan .fa{
-    transition: 0.5s;
+    transition: 0.1s;
 }
 .screensaver-slogan.in .fa{
     transform: rotate(180deg);
