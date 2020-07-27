@@ -25,131 +25,29 @@ $('.menu__main-burg,.menu__main li').on('click', function () {
     $('body').toggleClass('lock');
 })
 
-
-
-// TPE- модальное окно
-
-$(document).ready(function ($) {
-    $('.cont__tp-item1-modal-open').click(function () {
-        $('.cont__tp-item1-info').fadeIn();
-        return false;
-    });
-
-    $('.cont__tp-item1-info-modal-close').click(function () {
-        $(this).parents('.cont__tp-item1-info').fadeOut();
-        return false;
-    });
-
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.cont__tp-item1-info').fadeOut();
-        }
-    });
-
-    $('.cont__tp-item1-info').click(function (e) {
-        if ($(e.target).closest('.cont__tp-item1-info-modal').length == 0) {
-            $(this).fadeOut();
-        }
+    
+    //Заставка
+$(document).ready(function () {
+    $('.screensaver-slogan').click(function () {
+        $(this).toggleClass('in').next().slideToggle();
     });
 });
+
+// TPE
+$(document).ready(function () {
+    $('.product-tpe-list').click(function () {
+        $(this).toggleClass('in').next().slideToggle();
+    });
+});
+
 // Краситель белый модальное окно
-$(document).ready(function ($) {
-    $('.cont__tp-item3-modal-open').click(function () {
-        $('.cont__tp-item3-info').fadeIn();
-        return false;
-    });
 
-    $('.cont__tp-item3-info-modal-close').click(function () {
-        $(this).parents('.cont__tp-item3-info').fadeOut();
-        return false;
+// Краситель ЧЕРНЫЙ 
+$(document).ready(function () {
+    $('.product-black-list').click(function () {
+        $(this).toggleClass('in').next().slideToggle();
     });
-
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.cont__tp-item3-info').fadeOut();
-        }
-    });
-
-    $('.cont__tp-item3-info').click(function (e) {
-        if ($(e.target).closest('.cont__tp-item3-info-modal').length == 0) {
-            $(this).fadeOut();
-        }
-    });
-});
-// Краситель ЧЕРНЫЙ модальное окно
-$(document).ready(function ($) {
-    $('.cont__tp-item4-modal-open').click(function () {
-        $('.cont__tp-item4-info').fadeIn();
-        return false;
-    });
-
-    $('.cont__tp-item4-info-modal-close').click(function () {
-        $(this).parents('.cont__tp-item4-info').fadeOut();
-        return false;
-    });
-
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.cont__tp-item4-info').fadeOut();
-        }
-    });
-
-    $('.cont__tp-item4-info').click(function (e) {
-        if ($(e.target).closest('.cont__tp-item4-info-modal').length == 0) {
-            $(this).fadeOut();
-        }
-    });
-});
+})
 // Компаунды РР РА  модальное окно
-$(document).ready(function ($) {
-    $('.cont__tp-item5-modal-open').click(function () {
-        $('.cont__tp-item5-info').fadeIn();
-        return false;
-    });
 
-    $('.cont__tp-item5-info-modal-close').click(function () {
-        $(this).parents('.cont__tp-item5-info').fadeOut();
-        return false;
-    });
-
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.cont__tp-item5-info').fadeOut();
-        }
-    });
-
-    $('.cont__tp-item5-info').click(function (e) {
-        if ($(e.target).closest('.cont__tp-item5-info-modal').length == 0) {
-            $(this).fadeOut();
-        }
-    });
-});
 // Краситель Цветные модальное окно
-$(document).ready(function ($) {
-    $('.cont__tp-item7-modal-open').click(function () {
-        $('.cont__tp-item7-info').fadeIn();
-        return false;
-    });
-
-    $('.cont__tp-item7-info-modal-close').click(function () {
-        $(this).parents('.cont__tp-item7-info').fadeOut();
-        return false;
-    });
-
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.cont__tp-item7-info').fadeOut();
-        }
-    });
-
-    $('.cont__tp-item7-info').click(function (e) {
-        if ($(e.target).closest('.cont__tp-item7-info-modal').length == 0) {
-            $(this).fadeOut();
-        }
-    });
-});

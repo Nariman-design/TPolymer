@@ -48,29 +48,8 @@
     .screensaver-slogan p{
         font-size: 20px;
     }
-    .cont__tp {
-    display: grid;
-    grid-template-areas: 'item2' 
-                        'item1 '
-                        'item3'
-                        'item4'
-                        'item5'
-                        'item6'
-                        'item7' 
-                        'item8';
-    justify-items: stretch;
-    align-items: stretch;
-    justify-self: stretch;
-    justify-self:stretch ;
     
-    }
-    .cont__tp-item1-info-modal{
     
-	top: 20%;
-	right:0 ;
-	padding: 20px;
-    max-width: 100%;
-    }
     .botfooter__row-text{
     text-align: center;
     font-size: 10px;
