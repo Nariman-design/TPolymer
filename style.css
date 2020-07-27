@@ -214,6 +214,7 @@ z-index:1 ;
     margin-top: 200px;
     height: 350px;
     transition: 0.5s;
+    
 }
 .screensaver-slogan h2{
     
@@ -237,17 +238,22 @@ z-index:1 ;
     text-align: center;
     margin-top: 100px;
     color: aliceblue;
-    cursor: pointer;
-    transition: 0.5s;
+    
+    transition: 0.3s;
+    
+    
 }
 .screensaver-slogan.in{
     height: 200px;
 }
 .screensaver-slogan.in span{
     margin-top: 0px;
+    
+    
 }
 .screensaver-slogan .fa{
     transition: 0.1s;
+    
 }
 .screensaver-slogan.in .fa{
     transform: rotate(180deg);
