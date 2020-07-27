@@ -25,34 +25,21 @@ $('.menu__main-burg,.menu__main li').on('click', function () {
     $('body').toggleClass('lock');
 })
 
-
-
-// TPE- модальное окно
-
-$(document).ready(function ($) {
-    $('.cont__tp-item1-modal-open').click(function () {
-        $('.cont__tp-item1-info').fadeIn();
-        return false;
-    });
-
-    $('.cont__tp-item1-info-modal-close').click(function () {
-        $(this).parents('.cont__tp-item1-info').fadeOut();
-        return false;
-    });
-
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.cont__tp-item1-info').fadeOut();
-        }
-    });
-
-    $('.cont__tp-item1-info').click(function (e) {
-        if ($(e.target).closest('.cont__tp-item1-info-modal').length == 0) {
-            $(this).fadeOut();
-        }
+    
+    //Заставка
+$(document).ready(function () {
+    $('.screensaver-slogan').click(function () {
+        $(this).toggleClass('in').next().slideToggle();
     });
 });
+
+// TPE
+$(document).ready(function () {
+    $('.product-tpe-list').click(function () {
+        $(this).toggleClass('in').next().slideToggle();
+    });
+});
+
 // Краситель белый модальное окно
 $(document).ready(function ($) {
     $('.cont__tp-item3-modal-open').click(function () {
