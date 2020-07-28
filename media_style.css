@@ -1,59 +1,43 @@
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-    .wrapper  {
-    max-width: 100%;
+@media only screen and (min-width : 768px) {
+    .container{
+        background-color: blue;
     }
-    
+    .wrapper {
+    max-width: 1000px;
+    }
+    .header{
+    max-width: 1000px;
+    }
+    .product-tpe{
+        display: inline-flex;
+        padding: 5px;
+    }
+    .product-tpe-text{
+    display: block;
+   
+}
+
+.product__masterbatch{
+    display: flex;
+}
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-    .wrapper  {
-    max-width: 100%;
+@media only screen and (min-width:479px) and (max-width : 768px) {
+    .container{
+        background-color: rgb(199, 20, 130);
     }
-    
-    .cont__tp {
-    display: grid;
-    grid-template-areas: 'item2 item2' 
-                        ' item1 item5'
-                        'item3 item5'
-                        'item6 item6'
-                        'item4 item7'
-                        'item8 item8';
+    .wrapper {
+    max-width: 768px;
     }
-    .menu__main li{
-    margin-top: 20px;
+    .header{
+    max-width: 768px;
     }
+.product-comp-list{
+    display: flex;
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-    .wrapper   {
-    max-width: 100%;
-    }
-    .header__logo{
-         
-    }
-    
-    .header__row {
-    position: relative;
-    display: flexbox;
-    
-    color: rgb(255, 255, 255);
-    align-items: center;
-    }
-    .screensaver-slogan h2{
-        font-size: 16px;
-    }
-    .screensaver-slogan p{
-        font-size: 20px;
-    }
-    
-    
-    .botfooter__row-text{
-    text-align: center;
-    font-size: 10px;
-    margin: 0px 0;
-    padding: 0px 0;
-    }  
 }
+
+
