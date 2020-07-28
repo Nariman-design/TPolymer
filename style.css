@@ -355,7 +355,7 @@ z-index:1 ;
     animation-duration: 10s;
     padding: 20px;
 }
-@keyframes colorback{
+@keyframes colorbac{
     0%{
  background:linear-gradient(00deg ,#FFFFFF, rgb(184, 222, 248) ,rgb(253, 225, 221),#FFFFFF,#96FFC0);
     }
@@ -572,7 +572,7 @@ z-index:1 ;
     animation-iteration-count: infinite;
     
 }
-@keyframes color {
+@keyframes colo {
 
     0%{
         background: linear-gradient(90deg,#EFFC00,#00FF00,  #0FC0FC, #0014A8,#FF0800);
