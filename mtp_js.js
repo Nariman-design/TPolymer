@@ -40,14 +40,27 @@ $(document).ready(function () {
     });
 });
 
-// Краситель белый модальное окно
-
+// Краситель белый 
+$(document).ready(function () {
+    $('.product-white-list').click(function () {
+        $(this).toggleClass('in').next().slideToggle();
+    });
+})
 // Краситель ЧЕРНЫЙ 
 $(document).ready(function () {
     $('.product-black-list').click(function () {
         $(this).toggleClass('in').next().slideToggle();
     });
 })
-// Компаунды РР РА  модальное окно
-
-// Краситель Цветные модальное окно
+// Компаунды РР РА  
+$(document).ready(function () {
+    $('.product-comp-list').click(function () {
+        $(this).toggleClass('in').next().slideToggle();
+    });
+})
+// Краситель Цветные 
+$(document).ready(function () {
+    $('.product-color-list').click(function () {
+        $(this).toggleClass('in').next().slideToggle();
+    });
+})
