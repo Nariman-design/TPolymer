@@ -1,7 +1,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 768px) {
     .container{
-        background-color: blue;
+        background-color: rgb(0, 0, 0);
     }
     .wrapper {
     max-width: 1000px;
@@ -9,22 +9,72 @@
     .header{
     max-width: 1000px;
     }
+    .product__row{
+        display: grid;
+        grid-template-areas:'item1 item1 item1'
+                            'item2 item4 item6'
+                            'item8 item5 item6';
+        grid-gap: 5px; 
+        
+        
+        
+    }
+    .product__row-title{
+        grid-area: item1;
+    }
     .product-tpe{
-        display: inline-flex;
-        padding: 5px;
+        grid-area: item2;
+        
     }
     .product-tpe-text{
-    display: block;
-   
-}
+        z-index: 100;
+        position: absolute;
+    }
+    .product-black{
+        grid-area: item4;
+    }
+    .product-black-text{
+        z-index: 100;
+        position: absolute;
+    }
+    }
+    .product-white{
+        grid-area: item5;
+        
+    }
+    .product-comp{
+        grid-area: item6;
+        
+    }
 
-.product__masterbatch{
-    display: flex;
+    
+    .product-color{
+        grid-area: item8;
+    }
+    
+    .product-tpe-list ul{
+        
+        
+    }
+    .product-tpe{
+        
+        
+    }
+    .product-tpe-text{
+    
 }
+.product-black-list ul{
+    
+}
+   #map {
+    max-width: 1000px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width:479px) and (max-width : 768px) {
+@media only screen and (min-width:481px) and (max-width : 768px) {
     .container{
         background-color: rgb(199, 20, 130);
     }
@@ -34,10 +84,21 @@
     .header{
     max-width: 768px;
     }
-.product-comp-list{
-    display: flex;
+    .product__row{
+        display: grid;
+        grid-template-areas:'item1 item1 '
+                            'item2 item6 '
+                            'item4 item6 '
+                            'item5 item8';
+        grid-gap: 5px;                    
+    }
+    .product__row-title{
+        grid-area: item1;
+    }
+    #map {
+    max-width: 768px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
 }
-
 }
-
-
