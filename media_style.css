@@ -1,5 +1,5 @@
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 769px) {
     .container{
         background-color: rgb(0, 0, 0);
     }
@@ -15,8 +15,6 @@
                             'item2 item4 item6'
                             'item8 item5 item6';
         grid-gap: 5px; 
-        
-        
         
     }
     .product__row-title{
@@ -36,42 +34,48 @@
     .product-black-text{
         z-index: 100;
         position: absolute;
-    }
+        left: 0;
     }
     .product-white{
         grid-area: item5;
         
     }
+    .product-white-text{
+        z-index: 100;
+        position: absolute;
+    }
     .product-comp{
         grid-area: item6;
         
     }
-
-    
+    .product-comp-text{
+        z-index: 100;
+        position: absolute;
+        left: 0;
+    }
     .product-color{
         grid-area: item8;
+        position: relative;
+    }
+    .product-color-text{
+        z-index: 100;
+        position: absolute;
     }
     
-    .product-tpe-list ul{
-        
-        
-    }
-    .product-tpe{
-        
-        
-    }
-    .product-tpe-text{
-    
-}
-.product-black-list ul{
-    
-}
-   #map {
+    #map {
     max-width: 1000px;
     height: 300px;
     margin: 10px;
     padding: 10px;
 }
+
+    }
+    
+    
+    
+    
+    
+    
 
 /* Small Devices, Tablets */
 @media only screen and (min-width:481px) and (max-width : 768px) {
@@ -95,10 +99,53 @@
     .product__row-title{
         grid-area: item1;
     }
+    .product-tpe{
+        grid-area: item2;
+        
+    }
+    .product-tpe-text{
+        z-index: 100;
+        position: absolute;
+    }
+    .product-black{
+        grid-area: item4;
+    }
+    .product-black-text{
+        z-index: 100;
+        position: absolute;
+        left: 0;
+    }
+    .product-white{
+        grid-area: item5;
+        
+    }
+    .product-white-text{
+        z-index: 100;
+        position: absolute;
+    }
+    .product-comp{
+        grid-area: item6;
+        
+    }
+    .product-comp-text{
+        z-index: 100;
+        position: absolute;
+        left: 0;
+    }
+    .product-color{
+        grid-area: item8;
+        position: relative;
+    }
+    .product-color-text{
+        z-index: 100;
+        position: absolute;
+    }
+    
     #map {
     max-width: 768px;
     height: 300px;
     margin: 10px;
     padding: 10px;
-}
+    }
+
 }
