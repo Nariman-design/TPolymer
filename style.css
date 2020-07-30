@@ -251,10 +251,33 @@ z-index:1 ;
 }
 .screensaver-slogan .fa{
     transition: 0.1s;
-    
+    color: rgb(0, 0, 0);
+    animation-name: top-bat;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes top-bat{
+    0%{
+        color: rgb(0, 0, 0);
+        padding-top: 0px;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        padding-top: 20px;
+    }
+    100%{
+        color:rgb(0, 0, 0) ;
+        padding-top: 0px;
+    }
 }
 .screensaver-slogan.in .fa{
     transform: rotate(180deg);
+    animation-play-state: paused;
+    
+    
 }
 .screensaver-text {
     background: rgb(50, 49, 51);
@@ -339,7 +362,28 @@ z-index:1 ;
     box-shadow: 2px 5px 10px 0 rgba(255, 255, 255, 0.979);
     display: inline-block;
 }
-
+.product-tpe-list .fa{
+    color: #666565;
+    animation-name: blink-tpe ;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes blink-tpe{
+    0%{
+        color: #666565;
+    }
+    50%{
+        color: rgb(0, 255, 0);
+        
+    }
+    100%{
+        color:#666565 ;
+        
+    }
+}
 .product-tpe-text{
     background: rgb(50, 49, 51);
     text-align: justify;
