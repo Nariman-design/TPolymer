@@ -561,7 +561,6 @@ z-index:1 ;
     
 }
 .product-comp-list1  li:nth-child(4) {
-    
     display: inline-block;
     padding: 5px 10px 5px 10px;
     border-radius: 15px;
@@ -569,6 +568,27 @@ z-index:1 ;
     background: linear-gradient(to left, #1d1d1d 0%, rgb(102, 100, 100), #2b2a2a);
     box-shadow: 2px 5px 10px 0 rgba(87, 87, 145, 0.904);
     margin: 20px 0 10px 0;
+    animation-name: blink-comp ;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes blink-comp{
+    0%{
+        box-shadow: 2px 5px 10px 0 rgba(87, 87, 145, 0.904);
+        color: #c9bcfd;
+    }
+    50%{
+        box-shadow: 2px 5px 10px 0 rgba(46, 45, 45, 0.904);
+        color: #7856ff;
+        
+    }
+    100%{
+        box-shadow: 2px 5px 10px 0 rgba(87, 87, 145, 0.904);
+        color: #c9bcfd;
+    }
 }
 .product-comp-list2{
     margin-top: 15px;
@@ -650,7 +670,27 @@ z-index:1 ;
     transition: all 0.3s linear;
     padding: 10px 10px;
     background: rgb(18, 19, 18);
-    
+    animation-name: blink-color ;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes blink-color{
+    0%{
+        color: rgb(114, 255, 133);
+    }
+    33%{
+        color: rgb(253, 7, 171);
+        
+    }
+    66%{
+        color: rgb(29, 4, 250);
+    }
+    100%{
+        color: rgb(114, 255, 133);
+    }
 }
 
 .fa-angle-double-right{
