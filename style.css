@@ -296,21 +296,8 @@ z-index:1 ;
     color: aliceblue;
 }
 /*-------ПРОДУКЦИЯ-------------*/
-/*.cont__tp {
-    display: grid;
-    grid-template-areas: 'item1 item2 item2'
-                        'item4 item3 item5'
-                        'item6 item6 item5'
-                        'item7 item8 item8';
-    grid-gap: 10px;
-    justify-items: stretch;
-    align-items: stretch;
-    justify-self: stretch;
-    justify-self:stretch ;
-    padding: 10px;
-}*/
+
 .product__row > div{
-    
     margin-bottom: 5px;
 }
 
@@ -448,10 +435,33 @@ z-index:1 ;
     background: linear-gradient(0deg, #fcc6ee,#ffffff,#a7f7b4);
     box-shadow: 2px 5px 10px 0 rgba(26, 27, 90, 0.904);
     font-size: 16px;
+    animation-name: blink-white ;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .product-white-list .fa {
     
+    color: rgb(0, 0, 0);
+    font-weight: 900;
     
+    
+}
+@keyframes blink-white{
+    0%{
+        
+        border: 1px solid #000000;
+    }
+    50%{
+        
+        border: 1px solid #ffffff;
+    }
+    100%{
+        
+        border: 1px solid #000000;
+    }
 }
 .product-white-text{
     display: none;
@@ -492,7 +502,27 @@ z-index:1 ;
     box-shadow: 2px 5px 10px 0 rgba(241, 239, 239, 0.904);
     
 }
-
+.product-black-list .fa{
+    animation-name: blink-black ;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes blink-black{
+    0%{
+        color: hsl(0, 0%, 100%);
+    }
+    50%{
+        color: rgb(0, 0, 0);
+        
+    }
+    100%{
+        color:#ffffff ;
+        
+    }
+}
 .product-black-text{
     background: rgb(0, 0, 0);
     text-align: justify;
