@@ -289,6 +289,7 @@ z-index:3 ;
     padding: 20px;
     display: none;
     border-radius: 5px;
+    position: relative;
 }
 
 .screensaver-text h2{
@@ -298,6 +299,16 @@ z-index:3 ;
 }
 .screensaver-text strong{
     color: aliceblue;
+}
+.screensaver-text::before{
+    content: "\f2d3";
+ font-family: "FontAwesome";
+ position: absolute;
+ right: 15px;
+ bottom: 15px;
+ transition: 0.3s;
+ color: rgb(0, 255, 0);
+ 
 }
 /*-------ПРОДУКЦИЯ-------------*/
 
@@ -319,10 +330,7 @@ z-index:3 ;
     border-radius: 5px;
 }
 .product-tpe-list{
-    
     padding: 20px 0 20px 0;
-    text-align: center;
-    
     text-align: center;
 }
 .product-tpe-list ul li{
@@ -340,7 +348,6 @@ z-index:3 ;
 .product-tpe-list  li:nth-child(1):hover {
     transform: scale(2.5,0.4);
 }
-
 .product-tpe-list li:nth-child(3){
     font-size: 1em;
     font-weight: 900;
@@ -354,26 +361,8 @@ z-index:3 ;
     display: inline-block;
 }
 .product-tpe-list .fa{
-    color: #666565;
-    animation-name: blink-tpe ;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes blink-tpe{
-    0%{
-        color: #666565;
-    }
-    50%{
-        color: rgb(0, 255, 0);
-        
-    }
-    100%{
-        color:#666565 ;
-        
-    }
+    color: rgb(0, 255, 0);
+    
 }
 .product-tpe-text{
     background: rgb(50, 49, 51);
@@ -381,6 +370,17 @@ z-index:3 ;
     padding: 20px;
     display: none;
     border-radius: 5px;
+    position: relative;
+}
+.product-tpe-text::before{
+    content: "\f2d3";
+ font-family: "FontAwesome";
+ position: absolute;
+ right: 15px;
+ bottom: 15px;
+ transition: 0.3s;
+ color: rgb(0, 255, 0);
+ 
 }
 /*-------краситель белый-------------*/
 .product-white{
@@ -428,35 +428,40 @@ z-index:3 ;
     display: inline-block;
     list-style-type: none;
     padding: 5px 10px 5px 10px;
-    border: 1px solid #000000;
+    border: 1px solid rgb(76, 0, 255);
     border-radius: 15px;
     color: rgb(0, 0, 0);
     background: linear-gradient(0deg, #fcc6ee,#ffffff,#a7f7b4);
     box-shadow: 2px 5px 10px 0 rgba(26, 27, 90, 0.904);
     font-size: 16px;
-    animation-name: blink-white ;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    
 }
 .product-white-list .fa {
     font-weight: 900;
 }
-@keyframes blink-whit{
-    
-}
 .product-white-text{
+    background:linear-gradient(45deg ,#FFFFFF, rgb(165, 214, 247) ,rgb(247, 210, 206),#FFFFFF,rgb(189, 246, 212));
+    border-radius: 5px;
     display: none;
     text-align: center;
     margin-top: 10px;
     color: rgb(0, 0, 0);
+    position: relative;
 }
 .product-white-text li{
     padding: 10px;
 }
-
+.product-white-text::before{
+    content: "\f2d3";
+ font-family: "FontAwesome";
+ position: absolute;
+ right: 15px;
+ bottom: 15px;
+ transition: 0.3s;
+ color: rgb(0, 255, 0);
+ background-color: rgb(0, 0, 0);
+ padding-left: 2px;
+}
 /*-------краситель черный-------------*/
 
 .product-black-list {
@@ -484,24 +489,26 @@ z-index:3 ;
     box-shadow: 2px 5px 10px 0 rgba(241, 239, 239, 0.904);
 }
 .product-black-list .fa{
-    animation-name: blink-black ;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    color: rgb(0, 255, 0);
 }
-@keyframes blink-black{
-    50%{
-        color: rgb(0, 0, 0);
-    }
-}
+
 .product-black-text{
     background: rgb(0, 0, 0);
     text-align: justify;
     padding: 20px;
     display:none ;
     border-radius: 5px;
+    position: relative;
+}
+.product-black-text::before{
+    content: "\f2d3";
+ font-family: "FontAwesome";
+ position: absolute;
+ right: 15px;
+ bottom: 15px;
+ transition: 0.3s;
+ color: rgb(0, 255, 0);
+ 
 }
 /*-------КОМПАУНДЫ-------------*/
 .product-comp {
@@ -541,23 +548,9 @@ z-index:3 ;
     background: linear-gradient(to left, #1d1d1d 0%, rgb(102, 100, 100), #2b2a2a);
     box-shadow: 2px 5px 10px 0 rgba(87, 87, 145, 0.904);
     margin: 20px 0 10px 0;
-    animation-name: blink-comp ;
-    animation-duration: 4s;
-    animation-delay: 1s;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes blink-com{
-    
-    50%{
-        
-        
-        
-        
-    }
     
 }
+
 .product-comp-list2{
     margin-top: 15px;
     padding: 20px 10px 20px 10px;
@@ -582,6 +575,17 @@ z-index:3 ;
     padding: 20px;
     text-align: justify;
     background: rgb(62, 60, 63) ;
+    position: relative;
+}
+.product-comp-text::before{
+    content: "\f2d3";
+ font-family: "FontAwesome";
+ position: absolute;
+ right: 15px;
+ bottom: 15px;
+ transition: 0.3s;
+ color: rgb(0, 255, 0);
+ 
 }
 .product-comp-list.in .product-comp-list2 {
     display: none;
@@ -599,7 +603,6 @@ z-index:3 ;
 .product-color-list {
     padding: 10px 0 20px 0;
     text-align: center;
-    
     color: #9D9D9D;
 }
 .product-color-list li{
@@ -633,7 +636,7 @@ z-index:3 ;
 }
 .product-color-list li:nth-child(5) {
     display: inline-block;
-    color: rgb(208, 250, 214);
+    color: rgb(0, 255, 0);
     font-size: 20px;
     font-weight: 300;
     border: 2px solid transparent;
@@ -643,43 +646,36 @@ z-index:3 ;
     transition: all 0.3s linear;
     padding: 10px 10px;
     background: rgb(18, 19, 18);
-    animation-name: blink-color ;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes blink-color{
-    
-    50%{
-        color: rgb(0, 255, 0);
-        box-shadow: 0px 5px 5px 0px rgba(134, 253, 110, 0.986);
-    }
     
 }
+
 
 .fa-angle-double-right{
     padding-left: 5px;
 }
-.product-color-text{
+.product-color-text-list{
     padding: 10px;
     background: rgb(50, 49, 51);
-    text-align: center;
+    
     padding: 20px;
     text-align: justify;
     display: none;
+    position: relative;
+}
+.product-color-text-list::before{
+    content: "\f2d3";
+ font-family: "FontAwesome";
+ position: absolute;
+ right: 15px;
+ bottom: 15px;
+ transition: 0.3s;
+ color: rgb(0, 255, 0);
+ 
 }
 
-
-
-
-.product-color-text-list{
-    text-align: left;
-
-}
 .product-color-text-list li{
     padding-top: 10px; 
+    text-align: left;
 }
 
 .service-info-text {
@@ -696,9 +692,7 @@ z-index:3 ;
 
 
 
-.service-info{
-    
-}
+
 .service-info h3 {
     text-align: center;
     font-size: 30px;
@@ -715,6 +709,7 @@ z-index:3 ;
     border-radius: 5px;
     
 }
+
 .service__list-text {
     
     background: rgb(50, 49, 51);
@@ -726,6 +721,16 @@ z-index:3 ;
     font-weight: bold;
     color: aliceblue; 
     font-size: 20px;
+}
+.service__list-text li{
+    margin-top: 10px;
+}
+.service__list-text li:nth-child(1){
+text-align: center;
+}
+.service__list-text .fa {
+    padding-right: 10px;
+    color:rgb(255, 255, 255) ;
 }
 .contact-address{
     margin-top: 60px;
