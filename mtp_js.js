@@ -28,8 +28,8 @@ $('.menu__main-burg,.menu__main li').on('click', function () {
     
     //Заставка
 $(document).ready(function () {
-    $('.screensaver-slogan').click(function () {
-        $(this).toggleClass('in').next().slideToggle();
+    $('.screensaver-slogan, .screensaver-text').click(function () {
+        $('.screensaver-slogan').toggleClass('in').next().slideToggle();
     });
 });
 
