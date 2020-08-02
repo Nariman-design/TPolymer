@@ -84,7 +84,7 @@ left: 0;
 width: 100%;
 height: 100%;
 background-color: rgb(0, 0, 0);
-z-index:1 ;
+z-index:3 ;
 }
 
 .container {
@@ -111,7 +111,7 @@ z-index:1 ;
     width: 100px;
     margin-left: 10px;
     position: relative;
-    z-index: 2;
+    z-index: 4;
 }
 
 .menu__row{
@@ -128,7 +128,7 @@ z-index:1 ;
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0);
-    z-index: 0;
+    z-index: 2;
     padding: 100px 0px 0px 0px;
     transition: all 1s;
     
@@ -141,7 +141,7 @@ z-index:1 ;
 .menu__main-burg{
     display: flex;
     position: relative;
-    z-index: 2;
+    z-index: 4;
 }
 .menu__main a{
     color: #d4d1d1;
@@ -163,7 +163,7 @@ z-index:1 ;
     color: rgb(0, 255, 0);
 }
 .menu__main-burg{
-    z-index: 2;
+    z-index: 4;
     display: flex;
     position: relative;
 }
@@ -444,17 +444,14 @@ z-index:1 ;
 .product-white-list .fa {
     font-weight: 900;
 }
-@keyframes blink-white{
-    50%{
-        background: linear-gradient(90deg, #fa7fd9,#ffffff,#47f364);
-        border: 1px solid #ffffff;
-        color: rgb(2, 93, 42);
-    }
+@keyframes blink-whit{
+    
 }
 .product-white-text{
     display: none;
     text-align: center;
     margin-top: 10px;
+    color: rgb(0, 0, 0);
 }
 .product-white-text li{
     padding: 10px;
@@ -539,7 +536,7 @@ z-index:1 ;
 .product-comp-list1  li:nth-child(4) {
     display: inline-block;
     padding: 5px 10px 5px 10px;
-    border-radius: 15px;
+    border-radius: px;
     color: #c9bcfd;
     background: linear-gradient(to left, #1d1d1d 0%, rgb(102, 100, 100), #2b2a2a);
     box-shadow: 2px 5px 10px 0 rgba(87, 87, 145, 0.904);
@@ -551,11 +548,11 @@ z-index:1 ;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-@keyframes blink-comp{
+@keyframes blink-com{
     
     50%{
         
-        background: linear-gradient(to left, #555555 0%, rgb(0, 0, 0), #555454);
+        
         
         
     }
@@ -564,6 +561,8 @@ z-index:1 ;
 .product-comp-list2{
     margin-top: 15px;
     padding: 20px 10px 20px 10px;
+    transition-delay: 5s;
+    
 }
 .product-comp-list2 li{
     margin-top: 5px;
@@ -576,15 +575,18 @@ z-index:1 ;
     box-shadow: 0 5px 5px 0 rgba(172, 150, 253, 0.2);
     margin-bottom: 0px;
 }
+
 .product-comp-text {
     display: none;
     text-align: center;
     padding: 20px;
     text-align: justify;
-    
-
+    background: rgb(62, 60, 63) ;
 }
-
+.product-comp-list.in .product-comp-list2 {
+    display: none;
+    
+}
 
 
 

@@ -35,32 +35,34 @@ $(document).ready(function () {
 
 // TPE
 $(document).ready(function () {
-    $('.product-tpe-list').click(function () {
-        $(this).toggleClass('in').next().slideToggle();
+    $('.product-tpe-list, .product-tpe-text').click(function () {
+        $('.product-tpe-list').toggleClass('in').next().slideToggle();
     });
 });
 
 // Краситель белый 
 $(document).ready(function () {
-    $('.product-white-list').click(function () {
-        $(this).toggleClass('in').next().slideToggle();
+    $('.product-white-list, .product-white-text').click(function () {
+        $('.product-white-list').toggleClass('in').next().slideToggle();
     });
 })
 // Краситель ЧЕРНЫЙ 
 $(document).ready(function () {
-    $('.product-black-list').click(function () {
-        $(this).toggleClass('in').next().slideToggle();
+    $('.product-black-list, .product-black-text').click(function () {
+        $('.product-black-list').toggleClass('in').next().slideToggle();
     });
 })
 // Компаунды РР РА  
 $(document).ready(function () {
-    $('.product-comp-list').click(function () {
-        $(this).toggleClass('in').next().slideToggle();
+    $('.product-comp-list, .product-comp-text').click(function () {
+        $('.product-comp-list').toggleClass('in').next().slideToggle();
     });
 })
 // Краситель Цветные 
 $(document).ready(function () {
-    $('.product-color-list').click(function () {
-        $(this).toggleClass('in').next().slideToggle();
+    $('.product-color-list, .product-color-text-list').click(function () {
+        $('.product-color-list').toggleClass('in').next().slideToggle();
+
     });
+    
 })
