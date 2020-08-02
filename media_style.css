@@ -1,5 +1,20 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 769px) {
+    .screensaver-slogan h2{
+    font-size: 20px;
+    padding: 10px;
+    
+    
+}
+.screensaver-slogan p{
+    
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 30px;
+    
+}
+
+
     .container{
         background-color: rgb(0, 0, 0);
     }
@@ -25,14 +40,14 @@
         
     }
     .product-tpe-text{
-        z-index: 100;
+        z-index: 2;
         position: absolute;
     }
     .product-black{
         grid-area: item4;
     }
     .product-black-text{
-        z-index: 100;
+        z-index: 2;
         position: absolute;
         left: 0;
     }
@@ -41,24 +56,28 @@
         
     }
     .product-white-text{
-        z-index: 100;
+        z-index: 2;
         position: absolute;
+        left: 0;
+        width: 100;
     }
     .product-comp{
         grid-area: item6;
         
     }
     .product-comp-text{
-        z-index: 100;
+        z-index: 2;
         position: absolute;
         left: 0;
+        
     }
+    
     .product-color{
         grid-area: item8;
         position: relative;
     }
     .product-color-text{
-        z-index: 100;
+        z-index: 2;
         position: absolute;
     }
     
@@ -68,7 +87,10 @@
     margin: 10px;
     padding: 10px;
 }
-
+.menu__main li{
+    margin-top: 40px;
+    
+}
     }
     
     
@@ -104,14 +126,14 @@
         
     }
     .product-tpe-text{
-        z-index: 100;
+        z-index: 2;
         position: absolute;
     }
     .product-black{
         grid-area: item4;
     }
     .product-black-text{
-        z-index: 100;
+        z-index: 2;
         position: absolute;
         left: 0;
     }
@@ -120,7 +142,7 @@
         
     }
     .product-white-text{
-        z-index: 100;
+        z-index: 2;
         position: absolute;
     }
     .product-comp{
@@ -128,7 +150,7 @@
         
     }
     .product-comp-text{
-        z-index: 100;
+        z-index: 2;
         position: absolute;
         left: 0;
     }
@@ -137,15 +159,21 @@
         position: relative;
     }
     .product-color-text{
-        z-index: 100;
+        z-index: 2;
         position: absolute;
     }
     
     #map {
     max-width: 768px;
     height: 300px;
-    margin: 10px;
     padding: 10px;
     }
 
 }
+@media all and (orientation: landscape) {
+    .menu__main li{
+    margin-top: 10px;
+    
+}
+}
+
