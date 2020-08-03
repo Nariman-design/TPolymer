@@ -6,7 +6,7 @@
     
     
 }
-.screensaver-slogan p{
+.screensaver-slogan h1{
     
     font-weight: 600;
     color: aliceblue;
@@ -98,12 +98,6 @@
 }
 }
     
-    
-    
-    
-    
-    
-
 /* Small Devices, Tablets */
 @media only screen and (min-width:481px) and (max-width : 768px) {
     .container{
