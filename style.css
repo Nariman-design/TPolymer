@@ -687,12 +687,7 @@ text-align: center;
     margin-right: 20px;
     color: rgb(0, 255, 0);
 }
-#map {
-    max-width: 480px;
-    height: 300px;
-    margin: 10px;
-    padding: 10px;
-}
+
 /* -----------------------------------------Самый футер--------------------------------------------------------*/
 .botfooter__row-text{
     text-align: center;

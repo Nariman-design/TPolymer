@@ -76,12 +76,7 @@
         padding: 50px 50px;
         border: 10px solid #725c5c;
     }
-    #map {
-    max-width: 1000px;
-    height: 300px;
-    margin: 10px;
-    padding: 10px;
-    }
+    
     .menu__main li{
     margin-top: 40px;
     }
@@ -156,11 +151,7 @@
         border: 10px solid #725c5c;
         left: 0;
     }
-    #map {
-    max-width: 768px;
-    height: 300px;
-    padding: 10px;
-    }
+    
 }
 @media all and (orientation: landscape) {
     .menu__main li{
