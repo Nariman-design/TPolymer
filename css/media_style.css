@@ -1,5 +1,8 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 769px) {
+    .screensaver-slogan span{
+        cursor: pointer;
+    }
     .screensaver-slogan h2{
     font-size: 20px;
     padding: 10px;
@@ -8,6 +11,9 @@
     font-weight: 600;
     color: aliceblue;
     font-size: 30px;
+    }
+    .screensaver-text, .product-tpe-text{
+        box-shadow: 0 14px 28px rgba(255, 255, 255, 0.185), 0 10px 10px rgba(195, 243, 203, 0.459);
     }
     .container{
         background-color: rgb(0, 0, 0);
@@ -28,6 +34,7 @@
     .product__row-title{
         grid-area: item1;
     }
+    
     .product-tpe{
         grid-area: item2;
     }
@@ -35,7 +42,8 @@
         z-index: 2;
         position: absolute;
         padding: 50px 50px;
-        border: 10px solid #725c5c;
+        border: 10px solid #000000;
+        margin-right: 5px;
     }
     .product-black{
         grid-area: item4;
