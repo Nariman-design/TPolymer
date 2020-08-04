@@ -485,7 +485,7 @@ z-index:3 ;
     display: grid;
     grid-template-columns:  1fr;
     align-items: center;
-    background: url(imeges/patern.png);
+    background-image: url(/imeges/patern.png);
     color: #FFFFFF;
     text-align: center;
 }
