@@ -161,7 +161,7 @@
     }
     
 }
-@media all and (orientation: landscape) {
+@media only screen and (max-width:830px) and (orientation: landscape) {
     .menu__main li{
     margin-top: 10px;
     
