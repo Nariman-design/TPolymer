@@ -1,5 +1,5 @@
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 769px) {
+@media only screen and (min-width : 830px) {
     .screensaver-slogan span{
         cursor: pointer;
     }
@@ -34,7 +34,6 @@
     .product__row-title{
         grid-area: item1;
     }
-    
     .product-tpe{
         grid-area: item2;
     }
@@ -90,15 +89,15 @@
     }
 }
 /* Small Devices, Tablets */
-@media only screen and (min-width:481px) and (max-width : 768px) {
+@media only screen and (min-width:481px) and (max-width : 830px) {
     .container{
         background-color: rgb(0, 0, 0);
     }
     .wrapper {
-    max-width: 768px;
+    max-width: 640px;
     }
     .header{
-    max-width: 768px;
+    max-width: 640px;
     }
     .product__row{
         display: grid;

@@ -41,7 +41,7 @@ body.lock{
 }
 .wrapper {
     box-sizing: border-box;
-    max-width: 480px;
+    max-width: 360px;
     overflow: hidden;
     margin: 0px auto;
     position: relative;
@@ -51,7 +51,7 @@ body.lock{
   display:none; 
   position: fixed; 
   bottom: 20px;
-  right: 30px; 
+  right: 50px; 
   z-index: 99; 
   border: none; 
   outline: none; 
@@ -67,7 +67,7 @@ body.lock{
 }
 .header{
     position: fixed;
-    max-width: 480px;
+    max-width: 360px;
     margin: 0px auto;
     z-index: 50;
 }
